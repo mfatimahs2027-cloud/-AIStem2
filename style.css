@@ -1,0 +1,142 @@
+/* ------------------------------ */
+/* GLOBAL RESET */
+/* ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------------------------------ */
+/* BODY TYPOGRAPHY */
+/* ------------------------------ */
+
+body {
+  font-family: "Fancy", serif; /* placeholder for your fancy font */
+  background-color: #0a0a12; /* near-black */
+  color: #e5e5e5; /* soft gray */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ------------------------------ */
+/* CONTAINER */
+/* ------------------------------ */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------------------ */
+/* SECTION SPACING */
+/* ------------------------------ */
+
+.section {
+  padding: 48px 0; /* 6 × 8px spacing scale */
+}
+
+/* ------------------------------ */
+/* BUTTONS */
+/* ------------------------------ */
+
+.button,
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3b1f47; /* deep purple */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.button:hover,
+button:hover {
+  background-color: #5a234f; /* purple with red tint */
+}
+
+/* ------------------------------ */
+/* HEADER LAYOUT */
+/* ------------------------------ */
+
+.site-header {
+  padding: 16px 0;
+  background-color: #0d0d16; /* slightly lighter than body */
+  border-bottom: 1px solid #1a1a25;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Desktop Navigation */
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: #e5e5e5;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  color: #b36adf; /* accent purple */
+}
+
+/* ------------------------------ */
+/* MOBILE NAV */
+/* ------------------------------ */
+
+.mobile-nav {
+  display: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .mobile-nav a {
+    color: #e5e5e5;
+    font-size: 18px;
+  }
+}
